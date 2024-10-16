@@ -1,4 +1,4 @@
-//Array filter() method: filter method will return boolean values true or false with creating new arrays..
+/*Array filter() method: filter method will return boolean values true or false with creating new arrays..   filter() (method to create a new array with elements that pass a test)     */
 
 
 //1.

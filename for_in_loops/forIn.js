@@ -1,5 +1,6 @@
 /* "for in loop" other hand used to iterate over the enumerable properties of an objects
-it allows you to access keys of an objects rather then the values  */
+it allows you to access keys of an objects rather then the values 
+for in loop (for iterating over object properties)        */
 
 //1.
 const array = [12,1,2,3,4];

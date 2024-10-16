@@ -1,4 +1,4 @@
-/* map() Higher order Array method : creates a new array performing some operations in each elements ...   using map() method.. **always return some value and **also creates new array if you will not return explicitly map method it will give us undefined as output ..
+/* map() Higher order Array method : creates a new array performing some operations in each elements ...   using map() method.. **always return some value and **also creates new array if you will not return explicitly map method it will give us undefined as output ..   (method to create a new array by applying a function to each element)
 syntax: map((currentElement, indexOfElement, array) => { ... } );   */
 
 

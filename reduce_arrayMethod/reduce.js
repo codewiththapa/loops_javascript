@@ -1,4 +1,4 @@
-/* Reduce() Array method... reduce an array to a single value
+/* Reduce() Array method...(method to reduce array to a single value by applying a function)             reduce an array to a single value
  Syntax: array.reduce( function(total, currentValue, currentIndex, arr), initialValue ) */
 
 //1.
@@ -47,3 +47,30 @@ const cart = [
   },0);
   
   console.log(cartOutput);   // 65200
+
+  //4.
+
+  
+const reducNum = [2,23,4,5,4];
+
+const initialVal = 100;
+
+const theResult = reducNum.reduce((accum,currval,indx,arr)=>{
+   console.log(indx,arr);
+   return accum+currval
+},initialVal)  
+
+console.log(theResult)
+
+//5.
+
+const shoopingCart = [
+   {course:'javascript', price:4578},
+   {course:'node js', price:3278},
+    {course:'react js', price:2572},
+    ];
+ 
+ const priceToPay = shoopingCart.reduce((accuml,currval)=>accuml+currval['price'],0);
+ 
+ console.log(priceToPay);
+ 

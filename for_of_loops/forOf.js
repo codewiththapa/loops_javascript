@@ -1,5 +1,5 @@
 /* 'for of Loop'  : is used to iterate over the values of an iterable objects 
-such as  'strings' and on 'arrays' 
+such as  'strings' and on 'arrays'  for of loop (iterating over arrays or iterables)
 Note: In "for of" Loop we dont need any (initilaization;condition;updation) like in other 
        "for" loops  here in "for of loop" it will be automaticaly initiliaze and update 
 "for of loop" : [array, Map, set , string] to iterate  over values     */
