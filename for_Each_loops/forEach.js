@@ -1,6 +1,9 @@
 /* 'forEach()' method in js calls a function for each element in an array in order
  
- syntax : forEach(callbackfunction(currentVal[,index,[Array]])[,thisArg])  */
+ syntax : forEach(callbackfunction(currentVal[,index,[Array]])[,thisArg]) 
+ 
+ forEach() array h.o.f and map() are almost same .. but the major difference between 
+forEach donot return and create new array as a output but 'map' methods vice-versa  */
 
  const favLang = ['js','react','java','linux'];
 
@@ -75,3 +78,65 @@ function triple(element,index,array){
 function square(element,index,array){
     array[index] = Math.pow(element,2)
 }
+
+
+
+//   forEach()  vs map()  method in arrays
+ 
+const employees = [
+  {
+    name:'suman',
+  joinedYear:2012
+ },
+ {
+    name:'thapa',
+    joinedYear:2020
+ },
+ {
+    name:'magar',
+    joinedYear:2024
+ }
+  ];
+
+
+//here using forEach()  methods in array..
+const summareis = [];
+
+employees.forEach((variabeles)=>{
+ summareis.push(`${variabeles.name} joined in the year ${variabeles.joinedYear}`)
+})
+
+console.log(summareis);
+
+
+//now using map()  array method
+
+const otp = employees.map(variabeles2=>{
+ return `${variabeles2.name} joined in the year ${variabeles2.joinedYear}`
+});
+
+console.log(otp);
+
+
+//
+const months = ['jan','feb','march','april'];
+
+months.forEach((val,indx,array)=>{
+   console.log(val,indx,array)
+
+});
+
+//
+const users = [
+  {firstName:'suman' , age:28 },
+  { firstName:'thapa' , age:29},
+  { firstName:'magar' , age:30},
+  { firstName:'dipti' , age:40},
+   ]
+
+users.forEach((val)=>{
+   console.log(`${val.firstName} is ${val.age} years old`)
+})
+
+
+
