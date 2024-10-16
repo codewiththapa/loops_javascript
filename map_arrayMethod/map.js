@@ -2,6 +2,18 @@
 syntax: map((currentElement, indexOfElement, array) => { ... } );   */
 
 
+//chianing in map method
+
+const chaining = [12,1,2,3,4,5,6,7];
+
+const mapChain= chaining
+                       .map((num)=>num*10)
+                       .map((num)=>num+1)
+                       .filter((num)=>num>=25)
+console.log(mapChain);
+
+
+
 //1
 const months = ['jan','feb','march','april'];
 months.map((month)=>{
@@ -42,3 +54,20 @@ const square = function (ele){
 }
 const squareNumber = numbers.map(square)
 console.log(squareNumber);              //output : [ 2,4,6,8,10]
+
+
+//4:
+
+
+const facebookUsers = [
+  {Names:'suman', country:"nepal"},
+   {Names:'magarKta', country:"uae"},
+    {Names:'thapa', country:"usa"},
+  ];
+
+const survey = facebookUsers.map((ele,indx)=>{
+  console.log(ele)
+  return `Our facebookusers in index ${indx} no. ${ele.Names} is from country ${ele.country}`
+});
+
+console.log(survey)

@@ -30,3 +30,20 @@ let rdResult = reduceMethod.reduce((accumulator,currentVal,currentIdx,array)=>{
 });
 
 document.write(rdResult)   // output: 20
+
+
+//3
+
+ //reduce syntax .. arr.reduce(function(totalVal,currentVal,indx,array),initialValue)     
+const cart = [
+    {productId:1, productName:'mobile', price:50000},
+      {productId:2, productName:'pant', price:4000},
+        {productId:3, productName:'bucket', price:1200},
+          {productId:4, productName:'sofa', price:10000},
+     ];
+  
+  const cartOutput = cart.reduce((totalprice,productCurentPrice)=>{
+     return totalprice+productCurentPrice.price 
+  },0);
+  
+  console.log(cartOutput);   // 65200
